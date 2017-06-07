@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Elemental Blessings: About the Author</title>
+<style type="text/css">
+html, body{
+	font-family:Baskerville, "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:100%;
+	background-color:#5a5952;
+
+}
+h2{
+	color:#08646a;
+	margin:0;
+}
+p{
+margin:15px 20px;
+}
+ul li{
+list-style-type:none;
+clear:both;
+}
+form{
+width:632px;
+padding:15px;
+overflow:auto;
+}
+#indivemail, #indivname{
+display:block;
+float:left;
+width:6em;
+text-align:right;
+margin-right:.5em;
+margin-left:0px;
+}
+label{
+margin-left:60px;
+}
+fieldset{
+background-color:#ccc;
+border:1px solid #666;
+border-radius:5px;
+margin:0 0 10px 0;
+}
+textarea{
+display:block;
+border:1px solid #666;
+line-height:1.25em;
+overflow:auto;
+font-size:.875em;
+margin-left:60px;
+}
+input[type="submit"], input[type="reset"]{
+width:4em;
+font-size:inherit;
+border:1px solid #04699d;
+border-radius:5px;
+box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+}
+input[type="submit"]{
+margin-right:1em;
+}
+#container {
+width: 960px;
+margin: auto;
+outline: #ff7900 2px solid;
+background-color:#8f8784;
+background-image:url(symbol.gif);
+background-repeat:no-repeat;
+background-position:bottom left;
+}
+#footer {
+  clear: both;
+}
+#content {
+	float: left;
+	width: 70%;
+	margin: 0 2.5%;
+	outline: 2px hidden #0053ae;
+	background-color:#b9b4b2;
+	 }
+img{
+float:left;
+padding:20px 30px 7px; 
+}
+#nav_container{
+clear:both;
+width:150px;
+background-color:#8f8784;
+padding: 10px 0 0;
+float: left;
+width: 22.5%;
+margin: 0 0 0 2.5%;
+outline: 2px hidden #dd0009;
+}
+ul#nav{
+list-style-type:none;
+padding:0;
+width:120px;
+margin:10px auto;
+}
+ul#nav li{
+margin:2px 0;
+}
+ul#nav li a{
+padding: 2px 0px;
+border:1px solid #dc7c0d;
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+background-color:#fff;
+text-decoration: none;
+text-align: center;
+color: #000;
+width:150px;
+display:block;
+}
+ul#nav li a:hover{
+background-color:#666;
+color:#eee;
+}
+#nav li a.selected{
+color:#fff;
+background-color:#ccc;
+}
+#title{
+float:left;
+padding:20px 20px 15px 20px; 
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="container">
+<img src="title.gif" id="title" alt="Elemental Blessing" height="100">
+<br>
+<div id="nav_container">
+	<ul id="nav">
+  <li><a href="final_homepage.html">Home</a></li>
+  <li><a href="final_plotpage.html">Plot</a></li>
+  <li><a href="final_characterspage.html">Characters</a></li>
+  <li><a href="final_purchase.html">Purchase</a></li>
+  <li><a href="final_about_the_author.html">About the Author</a></li>
+  <li><a href="final_form.html" class="selected">Give your feedback</a></li>
+
+  </ul>
+</div>
+<div id="content">
+<form method="post" action="mailto:neha.kunjal@gmail.com" enctype="text/plain" 
+onsubmit="window.alert('Send email prepared for you.')">
+<fieldset>
+<ul>
+<li>
+<label id="indivname">Your Name:</label>
+<input type="text" name="indiv" id="name" class="textinput" maxlength="40">
+</li>
+<li>
+<label for="email" id="indivemail">Email:</label>
+<input type="email" name="email" id="email" class="textinput" maxlength="40">
+</li>
+</ul>
+<label>How good did you think the books are?</label>
+<ul>
+<li>
+<label>
+<input type="radio" name="rating" value="Amazing">Amazing
+</label>
+</li>
+<li>
+<label>
+<input type="radio" name="rating" value="Great">Great
+</label>
+</li>
+<li>
+<label>
+<input type="radio" name="rating" value="Ok">Ok
+</label>
+</li>
+<li>
+<label>
+<input type="radio" name="rating" value="Bad">Bad
+</label>
+</li>
+<li>
+<label>
+<input type="radio" name="rating" value="Terrible">Terrible
+</label>
+</li>
+</ul>
+<label>Which book(s) was your favorite?</label>
+<ul>
+<li>
+<label>
+<input type="checkbox" name="book" value="Troubled Waters">Troubled Waters
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" name="book" value="Royal Airs">Royal Airs
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox" name="book" value="Jeweled Fire">Jeweled Fire
+</label>
+</li>
+</ul>
+<label>Any advice/concerns about the website or the books?</label>
+<br>
+<textarea name="instructions" cols="50" rows="10">
+Type your comments here.
+</textarea>
+<br>
+<label>Anything you want to tell the author?</label>
+<br>
+<textarea name="instructions" cols="50" rows="10">
+Type your comments here.
+</textarea>
+</fieldset>
+<input type="submit" value="send">
+<input type="reset" value="clear">
+</form>
+</div>
+<div id="footer">
+</div>
+</div>
+</body>
+</html>
